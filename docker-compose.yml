@@ -19,7 +19,7 @@ services:
     command: yarn start:prod
     restart: unless-stopped
     volumes:
-      - ./library:/usr/library
+      - /share/data:/usr/library
     ports:
       - 4000:4000
 
